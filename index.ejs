@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Diary</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/styles.css"> <!-- Link to styles.css -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Your Diary</h1>
+        </header>
+
+        <div class="diary-write">
+            <h2>Write a Diary Entry</h2>
+            <form action="/submit-diary" method="POST">
+                <textarea name="diaryContent" placeholder="What's on your mind?"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+
+            <form action="/your-diaries" method="get">
+                <button class="Buttony" type="submit">Your Diaries</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
